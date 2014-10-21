@@ -75,4 +75,4 @@ Run time: .*? Ops: (?P<ops>\d+) TPS: (?P<tps>\d+) Net_rate: (?P<net_rate>[\d.]+)
         if name in props:
             print('%s: %d' % (name, props[name]))
 
-    print('net_rate: %f.2 M/s' % props['net_rate'])
+    print('net_rate: %.2f M/s' % props['net_rate'])
