@@ -27,7 +27,7 @@ if __name__ == "__main__":
         log_file = 'megaslap.log.%d' % i
         logs.append(log_file)
         memaslap_args = '-s ' + args.server
-        memaslap_args += ' -c ' + str(args.concurrency)
+        memaslap_args += ' -c ' + str(per_instance_concurrency)
         memaslap_args += ' -t ' + args.duration
         if args.udp:
             memaslap_args += ' -U'
